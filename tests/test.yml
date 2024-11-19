@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
-  remote_user: root
+  become: true  # Ensure privilege escalation for package installation
   roles:
-    - ansible-awx
+    - geerlingguy.nginx
