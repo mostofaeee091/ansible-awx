@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: 10.42.65.36
   become: true  # Ensure privilege escalation for package installation
   roles:
     - geerlingguy.nginx
