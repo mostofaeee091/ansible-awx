@@ -1,2 +1,12 @@
 ---
-# tasks file for ansible-awx
+- name: Install NGINX
+  apt:
+    name: nginx
+    state: present
+    update_cache: yes
+
+- name: Ensure NGINX is running
+  service:
+    name: nginx
+    state: started
+    enabled: yes
